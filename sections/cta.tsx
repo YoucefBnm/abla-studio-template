@@ -11,12 +11,12 @@ const IMAGES = [
 
 export function Cta() {
     return (
-        <section className="oveflow-hidden mb-8">
+        <section className="oveflow-hidden mb-8 px-6">
             <div className="grid grid-cols-12 place-content-center">
-                <div className="pt-12 pl-8 space-y-6 col-span-10 sticky top-0 left-0 h-max">
-                    <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold uppercase">
+                <div className="pt-12 space-y-6 col-span-10 sticky top-0 left-0 h-max">
+                    <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold uppercase">
                         turn ideas into experiences
-                    </h1> 
+                    </h2> 
                     <Button variant={'secondary'} size='sm' className="uppercase font-semibold rounded-none">
                         Start your Project
                     </Button>

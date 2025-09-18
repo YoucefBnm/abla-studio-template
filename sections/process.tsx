@@ -39,9 +39,9 @@ export function Process () {
     })
 
     return (
-        <section className="text-background bg-foreground py-12 px-8 flex flex-wrap items-start gap-10">
+        <section className="text-background bg-foreground py-12 px-6 flex flex-wrap items-start gap-10">
             <div className="mb-8 space-y-2 md:flex-1 md:sticky top-8 left-0 h-max">
-                <TextStaggerInview as='h2' animation='bottom' className='text-4xl lg:text-5xl uppercase font-bold tracking-tighter'>
+                <TextStaggerInview as='h2' animation='bottom' className='text-3xl md:text-4xl lg:text-5xl uppercase font-bold tracking-tighter'>
                      multidisciplinary creative studio focusing on user design experience.
                 </TextStaggerInview>
             </div>

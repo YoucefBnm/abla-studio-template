@@ -62,7 +62,7 @@ export function Services () {
                             >
                                 <a 
                                     href={service.link} 
-                                    className={`text-5xl font-bold uppercase tracking-tight ${activeService === index ? 'blur-xs' : 'blur-none'}`}
+                                    className={`text-4xl md:text-5xl font-bold uppercase tracking-tight ${activeService === index ? 'blur-xs' : 'blur-none'}`}
                                 >
                                     {service.label}
                                 </a>
