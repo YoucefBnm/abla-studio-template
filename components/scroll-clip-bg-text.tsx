@@ -36,7 +36,7 @@ export function ScrollClipBgText({spaceClass='h-80', children, className, ...pro
     )
 }
 
-export function ScrollClipBgTextWrap ({ yInput=[0, 1], yRange=[0, 320], style, ...props}: HTMLMotionProps<'div'> & {yInput?: number[], yRange?: number[]}) {
+export function ScrollClipBgTextWrap ({ yInput=[0, 1], yRange=[0, 320], style, ...props}: HTMLMotionProps<'div'> & {yInput?: number[], yRange?: number[], style?: React.CSSProperties}) {
     const {scrollYProgress} = useScrollClipBgTextContext()
     const y = useTransform(scrollYProgress, yInput, yRange)
 
@@ -58,7 +58,7 @@ export function ClipText({className,style, ...props}: HTMLMotionProps<'span'>) {
     const backgroundPositionX = useTransform(
         scrollYProgress,
         [0, 1],
-        ["100%", "0%"]
+        ["100%", "0%"],
       );
         return (
         <motion.span 

@@ -130,8 +130,8 @@ export function Team () {
             <ScrollXCarousel className="h-[150vh]" >
                 
                 <ScrollXCarouselContainer className="h-dvh place-content-center flex flex-col gap-8 py-12">
-                    <div className="text-center px-6">
-                        <h2 className="text-4xl tracking-tight font-bold uppercase block text-center max-w-[25ch]">
+                    <div className="px-6">
+                        <h2 className="text-4xl tracking-tight font-bold uppercase max-w-[25ch]">
                             our team members are the backbone of our studio
                         </h2>
                     </div>

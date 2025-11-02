@@ -17,7 +17,7 @@ const IMAGES = [
 export function Hero() {
     return (
         <section className="relative p-8">
-          <TextStaggerInview animation="bottom" className="text-[14vw] leading-none uppercase font-bold tracking-tighter">Creative Studio</TextStaggerInview>
+          <TextStaggerInview animation="bottom" className="text-[14vw] *:overflow-hidden leading-[0.8] uppercase font-bold tracking-tighter">Creative Studio</TextStaggerInview>
           
           <div className="grid md:grid-cols-2 md:grid-rows-[max-content] mt-8">
             <div className="relative z-[2] col-start-1 row-start-1">
@@ -29,6 +29,7 @@ export function Hero() {
                 viewport={{ once: true }}
                 transition={{ 
                   duration: 0.3,
+                  ease: 'easeOut',
                 }}
               >
                 Combine strategy, human centered design, and technical know how to create websites, and brand that connect with real people.
@@ -42,6 +43,7 @@ export function Hero() {
                 transition={{ 
                   delay: 0.2,
                   duration: 0.3,
+                  ease: 'easeOut',
               }}
               >
                 <Button size={'sm'} className="rounded-none text-xs font-semibold uppercase ml-2">get started</Button>
