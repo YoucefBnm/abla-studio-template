@@ -35,7 +35,6 @@ export function Process () {
         damping: 50,
         stiffness: 300,
         restDelta: 0.001,
-    
     })
 
     return (
