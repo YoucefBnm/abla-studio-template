@@ -1,5 +1,5 @@
-'use client';
-import * as React from 'react';
+"use client";
+import * as React from "react";
 
 import {
   HTMLMotionProps,
@@ -7,14 +7,18 @@ import {
   MotionConfig,
   stagger,
   StaggerOrigin,
-} from 'motion/react';
-import { ANIMATION_VARIANTS, AnimationT } from '../utils/animation-variants';
+} from "motion/react";
+import { ANIMATION_VARIANTS, AnimationT } from "./utils/animation-variants";
 interface WordProps extends React.HTMLAttributes<HTMLSpanElement> {
   animation?: AnimationT;
 }
 
-export function WordStagger({ children, animation="default", ...props }: WordProps) {
-  const characters = String(children).split('');
+export function WordStagger({
+  children,
+  animation = "default",
+  ...props
+}: WordProps) {
+  const characters = String(children).split("");
   const animationVariants = ANIMATION_VARIANTS[animation];
   return (
     <span className="inline-block text-nowrap" {...props}>
@@ -31,11 +35,10 @@ export function WordStagger({ children, animation="default", ...props }: WordPro
   );
 }
 
-interface TextStaggerProps extends HTMLMotionProps<'span'> {
+interface TextStaggerProps extends HTMLMotionProps<"span"> {
   staggerValue?: number;
   staggerStart?: StaggerOrigin;
   animation?: AnimationT;
-  as?: React.ElementType;
 }
 
 export function TextStaggerInview({
@@ -44,17 +47,16 @@ export function TextStaggerInview({
   className,
   viewport = { once: true, amount: 0.25 },
   staggerValue = 0.02,
-  staggerStart = 'first',
+  staggerStart = "first",
   animation,
-  as: Component = 'span',
   ...props
 }: TextStaggerProps) {
-  const words = String(children).split(' ');
-  const MotionComponent = motion.create(Component);
+  const words = String(children).split(" ");
+
   return (
-    <MotionComponent
+    <motion.span
       initial="hidden"
-      whileInView={'visible'}
+      whileInView={"visible"}
       viewport={viewport}
       className={className}
       transition={{
@@ -64,17 +66,17 @@ export function TextStaggerInview({
     >
       <MotionConfig
         transition={{
-          ease: transition?.ease || 'easeOut',
+          ease: transition?.ease || "easeOut",
           ...transition,
         }}
       >
         {words.map((word, index) => (
           <React.Fragment key={`${word}-${index}`}>
             <WordStagger animation={animation}>{word}</WordStagger>
-            {index < words.length - 1 && ' '}
+            {index < words.length - 1 && " "}
           </React.Fragment>
         ))}
       </MotionConfig>
-    </MotionComponent>
+    </motion.span>
   );
 }

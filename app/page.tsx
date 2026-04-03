@@ -1,20 +1,24 @@
-import { Cta } from "@/sections/cta";
-import { Hero } from "@/sections/hero";
-import { Intro } from "@/sections/intro";
-import { Process } from "@/sections/process";
-import { Services } from "@/sections/services";
-import { Team } from "@/sections/team";
-import { ReactLenis } from 'lenis/react'
+import { Cta } from "@/components/sections/cta";
+import { Hero } from "@/components/sections/hero";
+import { Intro } from "@/components/sections/intro";
+import { Process } from "@/components/sections/process";
+import { Services } from "@/components/sections/services";
+import { Showcase } from "@/components/sections/showcase";
+import { Team } from "@/components/sections/team";
+import { Work } from "@/components/sections/work";
+import { ReactLenis } from "lenis/react";
 
 export default function Home() {
   return (
-    <ReactLenis root options={{ lerp: 1}}>
+    <ReactLenis root>
       <Hero />
-      <Intro />
       <Services />
+      <Showcase />
+      <Intro />
       <Process />
+      <Work />
       <Cta />
       <Team />
-   </ReactLenis>
+    </ReactLenis>
   );
 }
