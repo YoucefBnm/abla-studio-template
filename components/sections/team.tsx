@@ -1,9 +1,10 @@
 'use client'
 import { cn } from "@/lib/utils";
-import { CameraIcon,  GlobeIcon, LinkedinIcon, MoveRightIcon } from "lucide-react";
+import { CameraIcon,  GlobeIcon,  MoveRightIcon } from "lucide-react";
 import Image from "next/image";
 import { ScrollXCarousel, ScrollXCarouselContainer, ScrollXCarouselWrap } from "@/components/systaliko-ui/blocks/scroll-x-carousel";
 import { Button } from "@/components/ui/button";
+import LinkedinIcon from "@/components/linkedin-icon";
 
 const TEAM = [
     {

@@ -1,6 +1,6 @@
 'use client'
 import { TextStaggerInview } from "@/components/systaliko-ui/text/text-stagger-inview";
-import { ImagePlayer } from "../components/image-player";
+import { ImagePlayer } from "../image-player";
 import Image from "next/image";
 import { ScrollAnimation, ScrollScale, ScrollTranslateY } from "@/components/systaliko-ui/blocks/scroll-animation";
 import { Button } from "@/components/ui/button";

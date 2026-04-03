@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/sections/header";
-import { Footer } from "@/sections/footer";
+import { Header } from "@/components/sections/header";
+import { Footer } from "@/components/sections/footer";
 
 const fontSans = Inter({
   variable: "--font-sans",

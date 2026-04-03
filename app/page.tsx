@@ -1,9 +1,9 @@
-import { Cta } from "@/sections/cta";
-import { Hero } from "@/sections/hero";
-import { Intro } from "@/sections/intro";
-import { Process } from "@/sections/process";
-import { Services } from "@/sections/services";
-import { Team } from "@/sections/team";
+import { Cta } from "@/components/sections/cta";
+import { Hero } from "@/components/sections/hero";
+import { Intro } from "@/components/sections/intro";
+import { Process } from "@/components/sections/process";
+import { Services } from "@/components/sections/services";
+import { Team } from "@/components/sections/team";
 import { ReactLenis } from 'lenis/react'
 
 export default function Home() {
